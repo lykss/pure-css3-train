@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>纯css3绘制行驶火车动画特效</title>
+		<link rel="stylesheet" type="text/css" href="css/train.css"/>
+	</head>
+	<body>
+		
+		<!--
+        	作者：252205451@qq.com
+        	时间：2016-07-20
+        	描述：纯CSS3绘制行驶火车动画特效
+        	1.确定绘制对象的参考点和参考部件(车身);
+        -->
+		
+		<!-- 车身 -->
+		<div class="train-body">
+			<!-- 烟筒 -->
+			<div class="train-chimney"></div>
+			
+			<!-- 小烟囱 -->
+			<div class="train-small-chimney train-small-chimney-1">
+				<div class="light front-light"></div>
+				<div class="light tail-light"></div>
+			</div>
+			<div class="train-small-chimney train-small-chimney-2">
+				<div class="light front-light"></div>
+				<div class="light tail-light"></div>
+			</div>
+			<div class="train-small-chimney train-small-chimney-3">
+				<div class="light front-light"></div>
+				<div class="light tail-light"></div>
+			</div>
+			<div class="train-small-chimney train-small-chimney-4">
+				<div class="light front-light"></div>
+				<div class="light tail-light"></div>
+			</div>
+			
+			<!-- 前钢圈 -->
+			<div class="train-rims train-rims-front"></div>
+			<div class="train-rims train-rims-tail"></div>
+			
+			<!-- 控制室 -->
+			<div class="train-control-room">
+				<!-- 外沿 -->
+				<div class="train-control-room-outer"></div>
+				
+				<!-- 屋顶 -->
+				<div class="train-control-room-top"></div>
+				
+				<!-- 尾部横梁 -->
+				<div class="train-control-room-beam"></div>
+				
+				<!-- 车牌号 -->
+				<div class="train-number">110</div>
+				
+				<!-- 窗户 -->
+				<div class="train-control-room-window">
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+				</div>
+				
+				<!-- 通风口 -->
+				<div class="train-control-room-vent front-vent"></div>
+				<div class="train-control-room-vent tail-vent"></div>
+				
+				<!-- 门 -->
+				<div class="train-control-room-door door-front"></div>
+				<div class="train-control-room-door door-tail"></div>
+				
+				<!-- 控制室底座 -->
+				<div class="train-control-room-base"></div>
+			</div>
+			
+			<!-- 火车名 -->
+			<div class="train-name-wrapper">和谐号</div>
+			
+			<!-- 尾部扶手架 -->
+			<div class="train-handrail-wrapper">
+				<!-- 顶部扶手 -->
+				<div class="train-handrail train-handrail-top"></div>
+				<!-- 支柱 -->
+				<div class="train-handrail-bar train-handrail-bar-1"></div>
+				<div class="train-handrail-bar train-handrail-bar-2"></div>
+				<div class="train-handrail-bar train-handrail-bar-3"></div>
+				<div class="train-handrail-bar train-handrail-bar-4"></div>
+				<div class="train-handrail-bar train-handrail-bar-5"></div>
+				<!-- 底部扶手 -->
+				<div class="train-handrail train-handrail-bottom"></div>
+			</div>
+			
+			<!-- 火车身基座 -->
+			<div class="train-base">
+				<!-- 顶板 -->
+				<div class="train-base-board-top"></div>
+				<!-- 底板 -->
+				<div class="train-base-board-bottom"></div>
+				<!-- 尾板 -->
+				<div class="train-base-board-tail"></div>
+				<!-- 扶手板 -->
+				<div class="train-base-board-handrail">
+					<!-- 扶梯 -->
+					<div class="train-escalator-wrapper">
+						<!-- 左边垂直柱 -->
+						<div class="train-escalator-bar-vertical train-escalator-bar-vertical-left"></div>
+						<!-- 水平柱 -->
+						<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-1"></div>
+						<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-2"></div>
+						<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-3"></div>
+						<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-4"></div>
+						<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-5"></div>
+						<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-6"></div>
+						<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-7"></div>
+						<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-8"></div>
+						<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-9"></div>
+						<!-- 右边垂直柱 -->
+						<div class="train-escalator-bar-vertical train-escalator-bar-vertical-right"></div>
+					</div>
+				</div>
+				<!-- 车轮组 -->
+				<div class="train-wheel-wrapper">
+					<!-- 车轮 -->
+					<div class="train-wheel train-wheel-1">
+						<!-- 叶片 -->
+						<div class="train-wheel-blade train-wheel-blade-1"></div>
+						<div class="train-wheel-blade train-wheel-blade-2"></div>
+						<div class="train-wheel-blade train-wheel-blade-3"></div>
+						<div class="train-wheel-blade train-wheel-blade-4"></div>
+						<div class="train-wheel-blade train-wheel-blade-5"></div>
+						<div class="train-wheel-blade train-wheel-blade-6"></div>
+						<!-- 轴承 -->
+						<div class="train-wheel-bearing"></div>
+						<!-- 大盖子 -->
+						<div class="train-wheel-cover-big"></div>
+					</div>
+					<div class="train-wheel train-wheel-2">
+						<!-- 叶片 -->
+						<div class="train-wheel-blade train-wheel-blade-1"></div>
+						<div class="train-wheel-blade train-wheel-blade-2"></div>
+						<div class="train-wheel-blade train-wheel-blade-3"></div>
+						<div class="train-wheel-blade train-wheel-blade-4"></div>
+						<div class="train-wheel-blade train-wheel-blade-5"></div>
+						<div class="train-wheel-blade train-wheel-blade-6"></div>
+						<!-- 轴承 -->
+						<div class="train-wheel-bearing"></div>
+					</div>
+					<div class="train-wheel train-wheel-3">
+						<!-- 叶片 -->
+						<div class="train-wheel-blade train-wheel-blade-1"></div>
+						<div class="train-wheel-blade train-wheel-blade-2"></div>
+						<div class="train-wheel-blade train-wheel-blade-3"></div>
+						<div class="train-wheel-blade train-wheel-blade-4"></div>
+						<div class="train-wheel-blade train-wheel-blade-5"></div>
+						<div class="train-wheel-blade train-wheel-blade-6"></div>
+						<!-- 轴承 -->
+						<div class="train-wheel-bearing"></div>
+					</div>
+					<div class="train-wheel train-wheel-4">
+						<!-- 叶片 -->
+						<div class="train-wheel-blade train-wheel-blade-1"></div>
+						<div class="train-wheel-blade train-wheel-blade-2"></div>
+						<div class="train-wheel-blade train-wheel-blade-3"></div>
+						<div class="train-wheel-blade train-wheel-blade-4"></div>
+						<div class="train-wheel-blade train-wheel-blade-5"></div>
+						<div class="train-wheel-blade train-wheel-blade-6"></div>
+						<!-- 轴承 -->
+						<div class="train-wheel-bearing"></div>
+					</div>
+					<div class="train-wheel train-wheel-5">
+						<!-- 叶片 -->
+						<div class="train-wheel-blade train-wheel-blade-1"></div>
+						<div class="train-wheel-blade train-wheel-blade-2"></div>
+						<div class="train-wheel-blade train-wheel-blade-3"></div>
+						<div class="train-wheel-blade train-wheel-blade-4"></div>
+						<div class="train-wheel-blade train-wheel-blade-5"></div>
+						<div class="train-wheel-blade train-wheel-blade-6"></div>
+						<!-- 轴承 -->
+						<div class="train-wheel-bearing"></div>
+					</div>
+					<div class="train-wheel train-wheel-6">
+						<!-- 叶片 -->
+						<div class="train-wheel-blade train-wheel-blade-1"></div>
+						<div class="train-wheel-blade train-wheel-blade-2"></div>
+						<div class="train-wheel-blade train-wheel-blade-3"></div>
+						<div class="train-wheel-blade train-wheel-blade-4"></div>
+						<div class="train-wheel-blade train-wheel-blade-5"></div>
+						<div class="train-wheel-blade train-wheel-blade-6"></div>
+						<!-- 轴承 -->
+						<div class="train-wheel-bearing"></div>
+						<!-- 小盖子 -->
+						<div class="train-wheel-cover-small"></div>
+					</div>
+					<!-- 轴承组 -->
+					<div class="train-bear-group train-bear-group-1">
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-left"></div>
+						<div class="train-bear-group-bar"></div>
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-right"></div>
+					</div>
+					<div class="train-bear-group train-bear-group-2">
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-left"></div>
+						<div class="train-bear-group-bar"></div>
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-right"></div>
+					</div>
+					<div class="train-bear-group train-bear-group-3">
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-left"></div>
+						<div class="train-bear-group-bar"></div>
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-right"></div>
+					</div>
+					<div class="train-bear-group train-bear-group-4">
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-left"></div>
+						<div class="train-bear-group-bar"></div>
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-right"></div>
+					</div>
+					<div class="train-bear-group train-bear-group-5">
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-left"></div>
+						<div class="train-bear-group-bar"></div>
+						<div class="train-bear-group-circle-bear train-bear-group-circle-bear-right"></div>
+					</div>
+				</div>
+				<!-- 前板 -->
+				<div class="train-base-board-front">
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					<hr />
+					
+					<!-- 轴承 -->
+					<div class="font-bear font-bear-top"></div>
+					<div class="font-bear font-bear-bottom"></div>
+					
+					<!-- 水箱 -->
+					<div class="box">
+						<!-- 锁 -->
+						<div class="box-lock box-lock-left"></div>
+						<div class="box-lock box-lock-right"></div>
+					</div>
+					
+					<!-- 水桶 -->
+					<div class="bucket">
+						<div class="bucket-cover bucket-cover-left"></div>
+						<div class="bucket-cover bucket-cover-right"></div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 车头 -->
+			<div class="train-header-wrapper">
+				<!-- 车头盖 -->
+				<div class="train-header-cover"></div>
+				<!-- 车头盖外壳1 -->
+				<div class="train-header-outer1"></div>
+				<!-- 车头盖外壳2 -->
+				<div class="train-header-outer2"></div>
+				
+				<!-- 车灯 -->
+				<div class="train-light"></div>
+				<!-- 车灯外壳 -->
+				<div class="train-light-shell"></div>
+				<!-- 灯支架 -->
+				<div class="train-light-stand"></div>
+				
+				<!-- 车前板 -->
+				<div class="train-header-board"></div>
+				<div class="train-header-board-vertical">
+					<div class="train-front-escalator-box">
+						<!-- 扶梯 -->
+						<div class="train-escalator-wrapper">
+							<!-- 左边垂直柱 -->
+							<div class="train-escalator-bar-vertical train-escalator-bar-vertical-left"></div>
+							<!-- 水平柱 -->
+							<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-1"></div>
+							<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-2"></div>
+							<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-3"></div>
+							<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-4"></div>
+							<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-5"></div>
+							<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-6"></div>
+							<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-7"></div>
+							<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-8"></div>
+							<div class="train-escalator-bar-horizontal train-escalator-bar-horizontal-9"></div>
+							<!-- 右边垂直柱 -->
+							<div class="train-escalator-bar-vertical train-escalator-bar-vertical-right"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 扶手 -->
+				<div class="train-header-handrail"></div>
+				<div class="train-header-handrail-base"></div>
+			</div>
+		</div>
+	</body>
+</html>
